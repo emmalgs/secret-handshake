@@ -10,19 +10,19 @@ describe('Secret Handshake', () => {
       expect(commands(2)).toEqual(['double blink']);
     });
 
-    xtest('close your eyes for 100', () => {
+    test('close your eyes for 100', () => {
       expect(commands(4)).toEqual(['close your eyes']);
     });
 
-    xtest('jump for 1000', () => {
+    test('jump for 1000', () => {
       expect(commands(8)).toEqual(['jump']);
     });
 
-    xtest('combine two actions', () => {
+    test('combine two actions', () => {
       expect(commands(3)).toEqual(['wink', 'double blink']);
     });
 
-    xtest('reverse two actions', () => {
+    test('reverse two actions', () => {
       expect(commands(19)).toEqual(['double blink', 'wink']);
     });
 
